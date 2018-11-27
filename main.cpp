@@ -4,8 +4,9 @@
 using namespace std;
 
 //prototypes:
-
-
+void fillWith ( vector <int> &x, int y);
+int isPositive ( int n );
+void printVector ( vector <int> p );
 /////DO NOT TOUCH/////
 int main()
 {
@@ -42,3 +43,28 @@ int main()
 }
 
 //function definitions
+void fillWith ( vector <int> &x, int y)
+{ 
+  for ( int i = 0; i < x.size() ; i++)
+  {
+    x[i] = y;
+  }        
+}     
+int isPositive ( int n )
+{
+  int pos = 0;      
+  if ( n > 0 )
+  {
+    pos = 1;
+    return pos;
+  }
+}        
+void printVector ( vector <int> p )
+{
+  for ( int i = 0; i < p.size(); i++)
+  {
+    cout<<p[i]<<" ";
+  }
+
+}
+
