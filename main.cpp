@@ -58,6 +58,10 @@ int isPositive ( int n )
     pos = 1;
     return pos;
   }
+  else 
+  {
+    return pos;
+  }
 }        
 void printVector ( vector <int> p )
 {
